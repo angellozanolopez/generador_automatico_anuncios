@@ -1,81 +1,111 @@
-﻿Formación en IA generativa
+# **Formación en IA Generativa: Generación Automática de Descripciones para Inmuebles**
 
-Creación de un sistema de inteligencia artificial para generar descripciones automáticas en los anuncios de los inmuebles (pisos / viviendas). Por ejemplo, un usuario quiere publicar un anuncio y en base a marcar unos checkbox predefinidos (características), se generará el texto. Más abajo hay más información al respecto. 
+El objetivo de esta formación es desarrollar un sistema de inteligencia artificial capaz de generar automáticamente descripciones detalladas para anuncios de inmuebles.  
+Un usuario podrá seleccionar características predefinidas mediante checkboxes, y el sistema generará un texto basado en esos datos.  
 
-Los **objetivos** para este ejercicio son: 
+### **Beneficios del sistema**
+✅ **Mejorar la calidad de los anuncios:**  
+Mediante IA, se generarán descripciones únicas y atractivas que reflejen con precisión las características del inmueble.  
 
-- **Mejorar la calidad de los anuncios**: mediante la generación automática de textos  con  IA,  se  logrará  una  descripción más  detallada de  cada  inmueble, incluyendo  todas  sus  características,  haciendo  cada anuncio  único  y  más atractivo. 
+## **Fase 1: Creación de anuncios con sistema de reglas o computación evolutiva**
+El sistema generará un texto basado en la información proporcionada por el usuario:  
 
-**Fases del ejercicio**  
+### 🔹 **Información básica del inmueble**
+- 📏 Metros cuadrados  
+- 🛏️ Número de habitaciones  
+- 🛋️ Número de salones o comedores  
+- 🍽️ Número de cocinas  
+- 🚿 Número de baños  
+- 🌅 Número de balcones  
+- ☀️ Número de terrazas  
+- 🏗️ Número de ascensores  
+- ❄️ Climatización (aire acondicionado / calefacción)  
+- 🏢 Altura del inmueble (principal, 1ª, 2ª...)  
+- 🔢 Nº planta dentro del inmueble  
+- 🏗️ Año de construcción  
+- 💰 Gastos de comunidad e IBI  
+- 🛠️ Estado (a reformar o listo para vivir)  
+- 🏊‍♂️ Dotaciones adicionales (piscina, tenis, gimnasio)  
+- 🚗 Garaje  
 
-Se segmentará el ejercicio en 5 fases: 
+### 🔹 **Palabras clave en la descripción**
+- ✨ Fantástica  
+- 🏡 Maravillosa  
+- 🌟 Oportunidad  
+- 📌 Espaciosa  
+- 🏠 Amplia  
+- 🏢 Fenomenal  
+- 👨‍👩‍👧‍👦 Apartamento para [familias, parejas]  
+- 📏 Inmueble de más de XXXX metros cuadrados  
 
-- **Fase 1:** Crear anuncios con sistema de reglas o mediante computación evolutiva. Se creará el texto de los anuncios en base a que el usuario indique las siguientes características: 
-- Información básica del inmueble: 
-  - metros cuadrados 
-  - número de habitaciones 
-  - número de salones o comedores 
-  - número de cocinas 
-  - número de baños 
-  - número de balcones 
-  - número de terrazas 
-  - número de ascensores 
-  - climatización / aire acondicionado / calefacción 
-  - altura del inmueble (principal, 1ª, 2ª, ....) 
-  - nº planta dentro del inmueble 
-  - año de construcción 
-  - gastos de comunidad e ibi 
-  - estado a reformar, o para entrar a vivir 
-  - dotaciones vivienda: piscina, tenis, gimnasio 
-  - garaje 
-- Keywords: 
-- Fantástica 
-- Maravillosa 
-- Fenomenal 
-- Oportunidad 
-- Espaciosa 
-- Amplia 
-- Apartamento para [familias, parejas] 
-- Inmueble de más de XXXX metros cuadrados 
-- **Fase 2**: Complementar las fases anteriores con información geográfica según localización (latitud/longitud + radio/distancia). Se implementará la API de Google Places u otra de acceso gratuito a decidir directamente por el alumno, para disponer de información actualizada en tiempo real. Se identificarán los siguientes servicios o puntos de interés: 
-  - transportes 
-  - colegios / universidades 
-  - establecimientos comerciales 
-  - playa 
-  - hospitales 
-  - farmacias 
-  - bibliotecas 
-  - centros deportivos 
-  - zonas verdes 
-  - gasolineras 
-  - puntos de recarga de vehículos eléctricos 
-- **Fase 3**: Lectura e interpretación de las fotografías del anuncio con visión artificial (ej. api de Google visión, u otras a decidir por parte del usuario), a nivel de: 
-  - cocina: horno, nevera, microondas, lavadora, televisor, mesa, sillas, lavavajillas, ventana 
-  - habitaciones: cama, mesitas de noche, armarios, ventana 
-  - salón-comedor: chimenea, sofá, televisor, mesa, sillas, ventana 
-  - baño: pila, WC, bidé, bañera, plato de ducha, ventana 
-  - terraza: mobiliario, plantas 
-- **Fase 4**: Complementar con adjetivos obtenidos a través de las imágenes, extensión de la fase 3: 
-  - Iluminación (mucha luz natural) 
-  - Espacios amplios 
-  - .... 
-- **Fase 5**: Creación de estilos de texto diferente para cada anuncio 
-- En función de los resultados obtenidos para cada anuncio (Fase1+2+3+4), se devolverá el texto según target estimado del anuncio (jerga, tutear o tratar de usted, [completar]) 
-- Inmueble espacioso, ideal parejas, [completar] 
+---
 
-Ejecución del ejercicio 
+## **Fase 2: Incorporación de información geográfica**
+Se implementará una API (Google Places u otra gratuita) para extraer datos de la zona según la localización del inmueble (latitud/longitud + radio).  
 
-Se mostrarán los resultados a nivel de: 
+### 🔹 **Puntos de interés a identificar**
+- 🚇 Transporte público  
+- 🎓 Colegios y universidades  
+- 🏬 Establecimientos comerciales  
+- 🏖️ Playas y zonas verdes  
+- 🏥 Hospitales y farmacias  
+- 📚 Bibliotecas y centros deportivos  
+- ⛽ Gasolineras y puntos de recarga de vehículos eléctricos  
 
-- textos sugeridos para crear los anuncios 
-- información en base a puntos de interés por geolocalización 
-- keywords y adjetivos para complementar los anuncios 
-- estilo de texto según target del anuncio 
+---
 
-` `¡Ánimos! 
+## **Fase 3: Análisis de imágenes mediante visión artificial**
+Se utilizará una API de visión artificial (Google Vision u otra) para detectar objetos en las fotos del inmueble.  
 
-Entregables (en un único WeTransfer): 
+### 🔹 **Elementos detectables por estancia**
+- **Cocina:** horno, nevera, microondas, lavadora, televisor, mesa, sillas, lavavajillas, ventana  
+- **Habitaciones:** cama, mesitas de noche, armarios, ventana  
+- **Salón-comedor:** chimenea, sofá, televisor, mesa, sillas, ventana  
+- **Baño:** pila, WC, bidé, bañera, plato de ducha, ventana  
+- **Terraza:** mobiliario, plantas  
 
-1. Código fuente de la solución 
-1. Video explicativo del código fuente (máximo 3 minutos) 
-1. Video mostrando e interpretando los resultados (máximo 2 minutos) 
+---
+
+## **Fase 4: Generación de descripciones mejoradas**
+A partir de los datos extraídos de las imágenes, se enriquecerán las descripciones con adjetivos adicionales.  
+
+### 🔹 **Adjetivos añadidos según análisis de imágenes**
+- ☀️ Mucha luz natural  
+- 📏 Espacios amplios  
+- 🏡 Diseño moderno y acogedor  
+
+---
+
+## **Fase 5: Personalización del estilo de los anuncios**
+Se generarán descripciones adaptadas según el público objetivo del anuncio.  
+
+### 🔹 **Tipos de personalización del texto**
+- 👔 **Formal o informal:** según el tipo de comprador  
+- 👨‍👩‍👦 **Dirigido a familias, parejas o inversores**  
+- 🏡 **Uso de jergas específicas del mercado**  
+
+---
+
+## **Ejecución del ejercicio**
+📌 **Resultados esperados:**  
+✅ Textos sugeridos para los anuncios  
+✅ Información relevante de la zona basada en geolocalización  
+✅ Keywords y adjetivos para mejorar los anuncios  
+✅ Estilos de texto según el público objetivo  
+
+---
+
+## **📂 Entregables**
+Se entregarán los siguientes elementos en un único WeTransfer:  
+
+1️⃣ **Código fuente de la solución**  
+2️⃣ **Video explicativo del código fuente (máximo 3 minutos)**  
+3️⃣ **Video mostrando e interpretando los resultados (máximo 2 minutos)**  
+
+---
+
+## **🎥 SOLUCIÓN**
+### 📌 Video y Demostración  
+🔹 **Código fuente:** [![Ver en YouTube](https://img.shields.io/badge/🎥%20Código-red?logo=youtube&logoColor=white)](https://youtu.be/O_mOVcr4vlY?si=TXGakYguqF3IaBrZ)  
+🔹 **Demostración:** [![Ver en YouTube](https://img.shields.io/badge/🎥%20Demostración-red?logo=youtube&logoColor=white)](https://youtu.be/82R7os-4LtY?si=zIIzCWVkMNWTGiWi)  
+📌 *Haz clic con el botón derecho en el botón y selecciona "Abrir enlace en una nueva pestaña" para no salir del repositorio.*  
